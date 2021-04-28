@@ -1,0 +1,27 @@
+.parent{
+  width: 300px;
+  overflow: auto;
+}
+
+// 根据列宽决定table宽度
+.fixed-table {
+  :global{
+    .ant-table {
+      .clearfix();
+    }
+    .ant-table table{
+      width: 0;
+    }
+    .ant-spin-nested-loading {
+      float: left;
+    }
+    .ant-table-content {
+      float: left;
+    }
+    .ant-table-body {
+      table {
+        width: 0;
+      }
+    }
+  }
+}
