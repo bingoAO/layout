@@ -22,19 +22,19 @@ function App() {
       title: '姓名',
       dataIndex: 'name',
       key: 'name',
-      with:100
+      width:100
     },
     {
       title: '年龄',
       dataIndex: 'age',
       key: 'age',
-      with:200
+      width:200
     },
     {
       title: '住址',
       dataIndex: 'address',
       key: 'address',
-      with:300
+      width:300
     },
   ];
   console.log('styles',styles)

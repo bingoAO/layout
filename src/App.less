@@ -3,6 +3,16 @@
   overflow: auto;
 }
 
+.clearfix() {
+  &:before,
+  &:after {
+    content: ""; // 1
+    display: block; // 2
+    clear: both;
+  }
+  *zoom: 1;
+}
+
 // 根据列宽决定table宽度
 .fixedTable {
   :global{
